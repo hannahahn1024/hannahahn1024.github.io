@@ -1,0 +1,310 @@
+h1 {
+  font-family: "Marker Felt", fantasy;
+  font-size: 30px
+}
+
+#title {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+.boxed {
+  padding-left: 150px;
+  padding-right: 150px;
+  border: 1px solid green;
+  text-align: center;
+  margin: auto;
+}
+body {
+  border: 2px solid green;
+  text-align: center;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.navButtons {
+  width: 120px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#treeButton {
+  width: 40%;
+  height: auto;
+}
+
+#constellationButton {
+  width: 37.8%;
+  height: auto;
+}
+
+#constellationReset {
+  position: relative;
+  top: -250px;
+  left: 150px;
+  width: 150px;
+  height: 60px;
+  font-size: 25px;
+  font-weight: bold;
+}
+#wrongCloudPopUp, #rightCloudPopUp {
+  position: absolute;
+  margin: auto;
+  top: 80px;
+  left: 270px;
+  width: 43%;
+  height: auto;
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  z-index: 0;
+}
+
+#treeButton, #constellationButton {
+  position: relative;
+  display: inline;
+}
+
+.flags {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  left: 50px;
+}
+
+.closeButton {
+  width: 130px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.trainingSteps{
+  position: relative;
+  width: 90%;
+  margin: auto;
+  border: 10px solid blue;
+}
+
+.trainingButton {
+  width: 300px;
+  height: 100px;
+  font-size: 35px;
+  font-weight: bold;
+}
+#tryIt {
+  width: 200px;
+  height: 70px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#question {
+  font-family: "Arial", sans-serif;
+}
+
+.answerChoice {
+  width: 100px;
+  height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.features {
+  display: inline;
+}
+
+#compWithArrows {
+  width: 30%;
+  height: auto;
+}
+
+#textRectangle1, #textRectangle2{
+  width:300px;
+  color: blue;
+  border: 5px solid blue;
+  display: inline-flex;
+  position: relative;
+  top: -55px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#bubbles {
+  width: 100%;
+  height: auto;
+}
+
+#skillMapBubble {
+  width: 100%;
+  height: auto;
+}
+
+.trainingText {
+  font-size: 30px;
+  width: 20%;
+  border: 5px solid blue;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+#trainingRect1 {
+  font-size: 18px;
+  width: 25%;
+  left: 50px;
+  top: 150px;
+}
+#trainingRect2 {
+  width: 25%;
+  font-size: 18px;
+  top: 400px;
+  right: 20px;
+}
+#trainingRect3 {
+  font-size: 20px;
+  top: 500px;
+  right: 60px;
+}
+
+#trainingRect4{
+  font-size: 18px;
+  position: absolute;
+  top: 400px;
+  right: 50px;
+}
+
+#training3Close {
+  width: 150px;
+  height: 70px;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.training {
+  width: 800px;
+}
+
+.skillRect {
+  width: 35%;
+  height: 20%;
+  border: 10px solid black;
+  position: relative;
+  margin: auto;
+}
+
+.writing {
+  width: 70%;
+  margin: auto;
+}
+
+.rect {
+  width: 300px;
+  border: 5px solid black;
+  padding: 5px;
+  display: inline;
+  background-color: #a9a9a9;
+}
+
+#pinkNum {
+  color: pink;
+}
+#greenNum {
+  color: green;
+}
+#yellowNum {
+  color: yellow;
+}
+#blueNum {
+  color: blue;
+}
+#redNum {
+  color: red;
+}
+
+#gameReset {
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#bigPic{
+  font-size: 90px;
+  border-radius: 30px;
+  border: 10px solid navy;
+  width: 800px;
+  margin: auto;
+}
+
+#textRectangle3 {
+  height: 50px;
+  width:470px;
+  color: blue;
+  border: 7px solid blue;
+  display: inline-flex;
+  position: relative;
+  top: -370px;
+  left: -100px;
+  justify-content: center;
+  align-items: center;
+}
+#textRectangle4 {
+  width:470px;
+  color: blue;
+  border: 7px solid blue;
+  display: inline-flex;
+  position: relative;
+  top: -370px;
+  right: -100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.jar {
+  display: inline;
+  z-index: 0;
+  position: relative;
+  left: -148px;
+  top: -18px;
+}
+.jarImage {
+  position: relative;
+  display: inline;
+  z-index: 1;
+  width: 13%;
+}
+
+.arrows {
+  position: relative;
+  width: 5%;
+  top: -200px;
+}
+
+#textRectangle3 {
+  position: relative;
+  left: -30px;
+  top: -220px;
+}
+#textRectangle4 {
+  position: relative;
+  right: -30px;
+  top: -220px;
+}
+
+#goHome, #bigPictureBack {
+  width: 200px;
+  height: 70px;
+  display: inline;
+}
+
+#goHome {
+  position: relative;
+  top: -10px;
+}

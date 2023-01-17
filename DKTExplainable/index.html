@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deep Knowledge Tracing!!!</title>
+  <link rel = "stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class = "explainable">
+
+    <!-- INTRO SLIDE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    -format
+    -make 'knowledge tracing' into a hyperlink to a good article or definition of knowledge TRACING
+    -maybe give users a brief background on the purpose and uses of knowledge tracing
+    -->
+
+
+    <div id = "intro">
+      <h1 id = "title"> Deep Knowledge Tracing</h1>
+      <br>
+      <h2><b>Deep Knowledge Tracing</b> is <u>knowledge tracing</u> using deep learning</h2>
+      <br>
+      <img src = "images/lightbulb.png" alt = "lightbulb">
+      <p><b style= "font-size: 60px">But first!</b> What is <b style = "color: blue">deep learning</b>?</p>
+
+      <div class = "boxed" style= "width: 800px">
+
+        <p><b>Deep Learning:</b>
+          a computer algorithm where, given an input, the computer will<br>learn to answer a question about that input
+          using a neural network and hidden layers</p>
+
+        </div>
+        <br>
+        <br>
+        <img src = "images/inputNNOutput.png" alt = "Input Neural Network Output" style = "width: 40%">
+        <br>
+        <p><b>But how does the <span style = "color: blue">neural network</span> know what it's doing?</b></p>
+        <p><b style = "font-size: 60px">We train it!</b></p>
+        <p>We feed the network a LOT of examples and tell it the answers.
+          Eventually, the computer will recognize the patterns and characteristics and will be able to answer on its own!</p>
+          <p style= "font-size: 40px">Let's do an example!</p>
+
+
+          <button type = 'button' id = 'introNext' class = "navButtons">NEXT</button>
+          <br>
+          <br>
+        </div>
+
+        <!--!!!!!!!!!!!CONSTELLATION EXAMPLE!!!!!!!!!!!!!-->
+
+        <!--TODO
+        -further formatting
+      -->
+      <div id = "constellationExample" style = "display: none">
+        <h1 style = "font-size: 50px" >Which is an image of a constellation? Click an image!</h1>
+        <div class= "container2">
+          <input type="image" id="treeButton" alt="TREE" src="images/tree.png" class = "constButtons">
+          <input type="image" id="constellationButton" alt="CONSTELLATION" src="images/constellation.png" class = "constButtons">
+
+          <!--We'll probably need to make a new div object for each cloud type? or we make it the same
+          object and change the innerhtml...don't know how to do that -->
+          <div id = "wrongCloudPopUp" style= "display: none">
+            <img src = "images/constellationWrong.png" alt = "WRONG!" width = 150%>
+            <button type="button" id = "constellationReset">RESET</button>
+          </div>
+
+          <div id = "rightCloudPopUp" style= "display: none">
+            <img src = "images/constellationRight.png" alt = "cloud" width = 150%>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button type="button" id = "constellationExampleBack" class = "navButtons">BACK</button>
+        <button type="button" id = "constellationExampleNext" class = "navButtons">NEXT</button>
+        <br>
+        <br>
+      </div>
+
+
+
+      <!--BRAIN VS. COMPUTER PAGE-->
+      <!-- TODO
+      -make it prettier?
+    -->
+
+    <div id = "brainVsComputer" style = "display: none">
+      <br>
+      <br>
+      <img src = "images/brainVsCPU.png" alt = "Brain Vs. Computer">
+      <p>Humans can categorize and identify often by using common sense.
+        Why was image B a constellation?
+        How did you know?
+        Maybe you recognized the Big Dipper.
+        Maybe you used deductive reasoning after seeing that image A was not of a constellation.
+        Or maybe you used common sense, and you knew image B is of a constellation, simply beacuse it is.</p>
+
+        <p>But a computer cannot do this!
+          A computer doesn't know what "stars" are, or what "trees" are. 
+          A computer doesn't have the same common sense that we do that allows us to "just know" image B is of a cosntellation.
+          So... how does a computer learn to identify constellations?
+        </p>
+        <button type="button" id = 'brainVCPUBack' class = "navButtons">BACK</button>
+        <button type="button" id = 'brainVCPUNext' class = "navButtons">NEXT</button>
+        <br>
+        <br>
+
+      </div>
+
+
+
+      <!-- FLAGS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+      <!-- TODO
+      -format to make it pretty
+      -flag resizing w/ page resizing
+    -->
+
+    <div id = "flagsMaster" style = "display: none">
+
+      <h1>Example: We want to be able to give the computer a picture,
+        and have the computer tell us if the picture is of a known constellation</h1>
+        <p>Click flags to expand explanation for our example</p>
+        <br>
+        <br>
+        <input type="image" id="flag1" alt="STEP ONE" src="images/step1.png" class = "flags">
+        <br>
+        <br>
+        <br>
+
+        <!-- FLAG 1 -->
+        <div id = "flag1Display" style = "display: none">
+          <img src = "images/stackOfImages.png" alt = "Lots of Images!">
+          <p>Feed the network a dataset of images, some of which are of constellations.
+            The network will then guess if each image is of a constellation.</p>
+            <br>
+            <p>..................................................................................................</p>
+            <br>
+            <p>The computer will probably start off getting things wrong...</p>
+            <br>
+            <img src = "images/flags1.png" alt = "Computer is Wrong">
+            <br>
+            <p>But we tell the network the answer after it guesses, so it learns!</p>
+            <br>
+            <button type = "button" id = "flags1Close" class = "closeButton">CLOSE</button>
+          </div>
+          <br>
+
+          <input type="image" id="flag2" alt="STEP TWO" src="images/step2.png" class = "flags">
+          <br>
+          <br>
+          <br>
+
+          <!--FLAG 2 -->
+
+          <div id = "flag2Display" style = "display: none">
+            <h2>Eventually the network learns what characteristics are important and how important they are!</h2>
+            <img src = "images/flags2.png" alt = "sampleNN">
+            <br>
+            <button type = "button" id = "flags2Close" class = "closeButton">CLOSE</button>
+          </div>
+
+          <br>
+          <input type="image" id="flag3" alt="STEP THREE" src="images/step3.png" class = "flags">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <!--FLAG 3 -->
+
+          <div id = "flag3Display" style = "display: none">
+            <h2>Test if the newly trained networks works by giving it images it has never seen before, and see if it works!</h2>
+            <br>
+            <img src = "images/flags3.png" alt = "Computer is Right!">
+            <br>
+            <p>................................................................................</p>
+            <br>
+            <h2>Repeat these 3 steps until the network has adequate accuracy!</h2>
+            <br>
+            <p>The more training you do, the more accurate the network will be, but the more resources it will take to train it!</p>
+            <br>
+            <button type = "button" id = "flags3Close" class = "closeButton">CLOSE</button>
+          </div>
+
+
+          <br>
+          <img src = "images/flagsCloud.png" alt = "But how does this relate to Deep Knowledge Tracing?" width = 80%>
+          <br>
+          <button type = "button" id = "flagsMasterBack" class = "navButtons">BACK</button>
+          <button type = "button" id = "flagsMasterNext" class = "navButtons">NEXT</button>
+          <br>
+          <br>
+        </div>
+
+
+
+        <!--BUBBLES PAGE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+        <!-- TODO
+          -ideally the bubble graphic at the end of this page will be much denser
+          -basically want to portray the idea of an overwhelming number of complex features
+          -animation would be ideal (bubbles just appearing and appearing)-->
+
+        <div id = "featuresOfDKT" style = "display: none">
+          <h1>Goal of DKT: given a student's past answers, predict if the student will get the next question right</h1>
+          <h2>We use DEEP LEARNING to figure it out!</h2>
+          <br>
+          <div class = "features" id = "textRectangle1">
+            Student's past answers
+          </div>
+
+
+          <img src = "images/computerWArrows.png" class = "features" alt = "computer" id = "compWithArrows">
+          <div class = "features" id = "textRectangle2">
+            Prediction for next question
+          </div>
+
+          <br>
+          <br>
+          <p>Predicting a student's performance on future interactions will require a far different network than one checking for constellations.
+            There are a lot of complex features that need to be taken into account.
+          <br>
+          <img src = "images/bubbles.png" alt = "bubbles image" id = "bubbles">
+          <br>
+          <br>
+          <br>
+
+          <button type = "button" id = "bubblesBack" class = "navButtons">BACK</button>
+          <button type = "button" id = "bubblesNext" class = "navButtons">NEXT</button>
+        </div>
+
+
+        <!-- SKILL MAP THOUGHT BUBBLE PAGE!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+        <!--TODO
+        -resize thought bubble?
+        -format entire page
+      -->
+
+      <div id = "thoughtBubble" style = "display: none">
+        <h1>There are a lot of complicated dimensions in a DKT neural network.
+          Let us just look at a simplified simulated DKT whose network focuses on skill mapping</h1>
+          <br>
+          <img src = "images/skillMap.png" alt = "Sample Skill Map" id = "skillMapBubble">
+          <br>
+          <br>
+          <br>
+          <button type = "button" id = "thoughtBubbleBack" class = "navButtons">BACK</button>
+          <button type = "button" id = "thoughtBubbleNext" class = "navButtons">NEXT</button>
+
+        </div>
+
+
+
+
+
+        <!-- TRAINING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+        <!-- TODO
+        - all of these will probably have to be reformatted to deal with page resizing
+        - want it to be smaller in general so you don't have to scroll to see everything-->
+
+        <div id = "training" style = "display: none">
+          <h1>Let's train our own skill network!</h1>
+
+          <div class = "trainingSteps" id = "training1">
+            <p>We begin with a bunch of student answered quiz questions and an empty network.<p>
+              <img src = "images/training1.png" alt = "Full basket" style= "width: 20%">
+
+              <div class = "trainingText" id = "trainingRect1">
+                <header> TRAINING DATASET</header>
+                Each ball represents an answered question.
+                The color of the ball represents the
+                skill tested in the quetsion.
+                The ball also holds information on the
+                correctness of the answer.
+              </div>
+              <br>
+              <img src = "images/blankRect.png" alt = "empty Network" style = "width: 35%; border: 10px solid black">
+              <br>
+              <div class = "trainingText" id = "trainingRect2">
+                The skill network is currently empty because it hasn't been trained yet
+              </div>
+              <br>
+              <button type = "button" id = "training1Close" class = "trainingButton">TRAIN!</button>
+              <br>
+              <br>
+            </div>
+
+            <div class = "trainingSteps" id = "training2" style = "display: none">
+              <p> We feed the questions into the network, and the network slowly learns about skill types and correlations</p>
+              <br>
+              <img src = "images/training2Balls.png" alt = "Pouring Basket" style = "width: 20%">
+
+              <br>
+              <img src = "images/incompleteSkillMap.png" alt = "Incomplete Skill Map" style = "width: 35%; border: 10px solid black">
+              <div class = "trainingText" id = "trainingRect3">
+                The network begins to realize that skill type (color)
+                is important and that there are correlations between skill types</div>
+                <br>
+                <br>
+                <button type = "button" id = "training2Close" class = "trainingButton">Complete Training!</button>
+                <br>
+                <br>
+              </div>
+
+              <div class = "trainingSteps" id = "training3" style = "display: none">
+
+                <p>We've given the network the entire training dataset and the network has made connections between skills</p>
+                <img src = "images/emptyBasket.png" alt = "Empty Basket" style = "width: 20%">
+                <br>
+                <br>
+                <br>
+                <img src = "images/completeSkillMap.png" alt = "Skill Map" style= "width: 35%; border: 10px solid black">
+                <div class = "trainingText" id = "trainingRect4">
+                  An arrow means the network has decided the skills are related.
+                    So students who get PINK skill questions correct are more likely to get GREEN and YELLOW skill questions correct because the skills are related.</p>
+                </div>
+                  <h2>We can now test the network and use it to predict students' future answers</h2>
+                  <button type = "button" id = "training3Close" class = "trainingButton">RESET</button>
+                  <br>
+                  <br>
+                </div>
+
+                <br>
+                <button type = "button" id = "trainingBack" class = "navButtons">BACK</button>
+                <button type = "button" id = "trainingNext" class = "navButtons">NEXT</button>
+              </div>
+
+
+              <!--GAME INTRO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+              <!-- TODO
+                -this page could use some reformatting to be more aesthetically pleasing-->
+
+
+              <div id = "gameIntro" style = "display: none">
+                <h1>Let's use our trained network in some Deep Knowledge Tracing</h1>
+                <p> Reminder! The goal of DKT is to use deep learning to predict if the student will get the next question right.</p>
+
+                <img src = "images/pinkJar.png" alt = "Pink Jar">
+                <img src = "images/greenJar.png" alt = "Green Jar">
+                <img src = "images/yellowJar.png" alt = "Yellow Jar">
+                <img src = "images/redJar.png" alt = "Red Jar">
+                <img src = "images/blueJar.png" alt = "Blue Jar">
+                <p>These jars show the likelihood that the student will answer a question of that color skill type correct. 
+                  The more questions answered correctly, the more some of the jars will fill!</p>
+                  <br>
+                  <img src = "images/algorithm.png" alt = "jar algorithm" width = 80%>
+                  <br>
+                  <p><b>Disclaimer!</b> This is a super arbitrarily made algorithm. 
+                    The algorithm is usually created by the network and is far more complex.
+                    Maybe the number of balls in a jar needed to signify mastery is different,
+                    or some skills yield more balls than others</p>
+                    <button type = "button" id = "tryIt">Try it!</button>
+                    <br>
+                    <br>
+                    <button type = "button" id = "gameIntroBack" class = "navButtons">BACK</button>
+                    <button type = "button" id = "gameIntroNext" class = "navButtons">NEXT</button>
+                  </div>
+
+                  <div id = "game" style = "display: none">
+
+                    <h1 id = "question" style= "font-size: 45px">QUESTION</h1>
+
+                    <button type="button" class="answerChoice">Choice A</button>
+                    <button type="button" class="answerChoice">Choice B</button>
+                    <button type="button" class="answerChoice">Choice C</button>
+                    <button type="button" class="answerChoice">Choice D</button>
+                    <br>
+                    <h2 id = "rightWrong">RIGHT/WRONG</h2>
+                    <img src = "images/completeSkillMap.png" alt = "Skill Map" style= "width: 30%">
+
+                    <div class = "instructionBox" style= "width: 400px; border: 10px solid green; padding: 15px;
+                      position: absolute; top: 200px; right: 50px">
+                      <ol>
+                        <li>Answer question</li>
+                        <li>Watch balls go into jars!</li>
+                      </ol>
+                      See how skills affect each other and how the network fills the jars!
+                    </div>
+                    <div id = "ballCounting"><b>Number of balls in each jar</b></div>
+                    <br>
+                    <div class = rect id = "pinkNum">0</div>
+
+                    <div class = rect id = "greenNum">0</div>
+
+                    <div class = rect id = "yellowNum">0</div>
+
+                    <div class = rect id = "redNum">0</div>
+
+                    <div class = rect id = "blueNum">0</div>
+                    <br>
+
+
+                    <span class = "ball"></span>
+
+
+
+                <!-- !!!!! GAME TIME !!!!!!!!!!!!!!! -->
+                <!--  I did the game using canvases-->
+
+
+
+                    <br>
+                    <br>
+                    <br>
+                    <img src = "images/pinkJar.png" alt="pink jar" class = "jarImage">
+                    <div id= "pinky" class= "jar">
+                      <canvas id="pinkCanvas" />
+                    </div>
+                    <img src = "images/greenJar.png" alt="green jar" class = "jarImage">
+                    <div id = "greeny" class= "jar">
+                      <canvas id="greenCanvas" />
+                    </div>
+                    <img src = "images/yellowJar.png" alt="yellow jar" class = "jarImage">
+                    <div id = "yellowy" class= "jar">
+                      <canvas id = "yellowCanvas" />
+                    </div>
+                    <img src = "images/redJar.png" alt="red jar" class = "jarImage">
+                    <div id = "redy" class= "jar">
+                      <canvas id = "redCanvas" />
+                    </div>
+                    <img src = "images/blueJar.png" alt="blue jar" class = "jarImage">
+                    <div id = "bluey" class = "jar">
+                      <canvas id = "blueCanvas" />
+                    </div>
+                    <br>
+                    <br>
+                    <p> 6 balls for network to predict if the student will get a question right!</p>
+                    <button type = "button" id = "gameReset">START OVER</button>
+                    <br>
+                    <br>
+                    <button type = "button" id = "gameBack" class = "navButtons">BACK</button>
+                    <button type = "button" id = "gameNext" class = "navButtons">NEXT</button>
+                    <br>
+
+
+                  </div>
+
+                  <!-- BIG PICTURE!!!!!!!!!!!!!!! -->
+                  <!-- Rewrite whatever. The writing is sloppy. Love the visual though
+                    -the visual was very helpful to test subjects-->
+
+                  <div id = "bigPicture" style = "display: none">
+                    <br>
+                    <h1 id = "bigPic">The Big Picture</h1>
+                    <p>You have now experienced the workings of a simulated DKT!</p>
+                    <p class = "writing">Even though you may not fully be able to visualize a fleshed out DKT
+                      (remember, there are just too many factors to take into account!),
+                      you should now have a clearer understanding of deep learning and how it is used in
+                      DEEP KNOWLEDGE TRACING!</p>
+                      <div class = "bigPicBox" style = "border: 15px solid navy; width: 100%; margin: auto;">
+
+                      <h2>Big Picture</h2>
+                      <ul>
+                        <li style="width: 70%; margin: auto">a deep learning network learned to predict a student's future performance
+                          using a dataset made up of past questions students have answered</li>
+                          <br>
+                          <li style="width: 70%; margin: auto">the network takes a lot of things into account! Although we focused
+                            on skill mapping relationships, that is just one of the things we train the
+                            network for! The network will also be trained in things like time,
+                            understanding fatigue, creating analysis algorithms, and detecting difficulty!</li>
+                          </ul>
+                          <div class = "features" id = "textRectangle3" style = "width: 17%;">
+                            Student's past answers
+                          </div>
+                          <img src = "images/arrow.png" alt = "Arrow" id = "arrow1" class = "arrows">
+                          <img src = "images/bigPicture.png" alt = "Big Picture" class = "features" style="margin: auto; position: relative; width: 40%">
+                          <img src = "images/arrow.png" alt = "Arrow" id = "arrow2" class = "arrows">
+                          <div class = "features" id = "textRectangle4" style = "width: 17%;">Prediction for future answers</div>
+                            <p>
+                          The network is given a student's answers and can predict the future!
+                        </p>
+
+                        </div>
+                          <p>And that's DEEP KNOWLEDGE TRACING! If you are interested in learning more on the subject,
+                            there are numerous articles out there for you!</p>
+                            <p>Feel free to go back and retry the games and simulations until you are comfortable with the subject!</p>
+                            <!--explain use of DKT and its importance-->
+                            <button type = "button" id = "goHome" class = "navButtons">BACK TO BEGINNING</button>
+                            <button type = "button" id = "bigPictureBack" class = "navButtons">BACK</button>
+                          </div>
+
+      </div>
+
+                        <div class = "answerKey">
+                        </div>
+                        <script src="script.js"></script>
+                        <body>
+                          </html>
